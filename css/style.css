@@ -16,12 +16,12 @@ a{
     text-decoration: none;
     z-index: 3;
 }
-.active{
+a:hover{
       color: #EA178C;
       bottom: 0px;
       height: 100%;   
 }
-:after{
+a::after{
     content: '';
     position: absolute;
     bottom: 0;
