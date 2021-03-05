@@ -1,15 +1,15 @@
 $(document).ready(function(){
   $('li').click(function(){
-    $(this).addClass('active a:after')  
+    $(this).addClass('active')  
   })
-  $('li').mouseover(function(){
-    $(this).removeClass('active a:after')  
+  $('li').mouseleave(function(){
+    $(this).removeClass('active')  
   })
-  $('a').mouseover(function(){
+  $('a').mouseenter(function(){
     $(this).addClass('active')
   })
-  $('a').click(function(){
-    $(this).addClass('active')
+  $('a').mouseleave(function(){
+    $(this).removeClass('active')
   })
 });
 
