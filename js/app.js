@@ -1,15 +1,14 @@
-$(document).ready(function(){
-  $('li').click(function(){
-    $(this).addClass('active')  
-  })
-  $('a').mouseover(function(){
-    $(this).addClass('active')
-  })
-  $('a').mouseleave(function(){
-    $(this).removeClass('active')
-  })
+$(document).ready(function () {
+  $('a').hover(function () {
+    $(this).css({'color': '#ea178c'});
+  }, function () {
+    $(this).css({'color': ''});
+  });
+
+  $('li a').click(function () {
+    $('li a').removeClass('active');
+    $(this).addClass('active');
+  });
 });
-
-
 
 
