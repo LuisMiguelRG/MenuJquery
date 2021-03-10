@@ -1,8 +1,8 @@
 $(document).ready(function () {
   $('a').hover(function () {
-    $(this).css({'color': '#ea178c'});
+    $(this).css({ 'color': '#ea178c' });
   }, function () {
-    $(this).css({'color': ''});
+    $(this).css({ 'color': '' });
   });
 
   $('li a').click(function () {
@@ -10,5 +10,3 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 });
-
-
